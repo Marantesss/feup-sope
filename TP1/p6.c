@@ -19,7 +19,7 @@ int main(int argc , char* argv[]) {
         exit(1);
     }
 
-    if ((dst = fopen(argv[1], "w")) == NULL) {
+    if ((dst = fopen(argv[2], "w")) == NULL) {
         perror("outfile.txt"); // prints: outfile.txt: No such file or directory
         //strerror(2);// no need for both
         //printf("ERROR: %s\n", strerror(errno));
