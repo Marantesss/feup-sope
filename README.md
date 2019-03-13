@@ -1,4 +1,4 @@
-# feup-sope
+# FEUP SOPE
 
 This repository contains the exercises completed in the TP classes of Sistemas Operativos, a **2nd year course** in the **Integrated Master's Degree in Informatics and Computing Engineering** @ **FEUP**
 
