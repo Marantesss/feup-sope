@@ -9,8 +9,6 @@ All the course's information can be viewed [here](https://sigarra.up.pt/feup/pt/
 ## Authors
 
 * **Gonçalo Marantes** - [Marantesss](https://github.com/Marantesss)
-* **César Nogueira**
-* **Simão Santos**
 
 ## License
 
