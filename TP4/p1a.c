@@ -7,12 +7,12 @@
 
 void sigint_handler(int signo) {
     printf("\nIn SIGINT handler ...\n");
-    printf("%d\n", signo); // output is 2... because SIGINT => 2
+    //printf("%d\n", signo); // output is 2... because SIGINT => 2
 }
 
 void sigusr1_handler(int signo) {
     printf("\nIn SIGUSR1 handler ...\n");
-    printf("%d\n", signo); // output is 10... because SIGUSR1 => 10
+    //printf("%d\n", signo); // output is 10... because SIGUSR1 => 10
 }
 
 int main (int argc, char** argv) {

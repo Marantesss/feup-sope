@@ -17,6 +17,7 @@ void sigterm_handler(int signo) {
 }
 
 int main(void) {
+
     struct sigaction action_int;
     action_int.sa_handler = sigint_handler;
 
