@@ -1,11 +1,12 @@
-# Ignore all
-*
+# ignore all hidden files
+.*
 
-# Unignore all with extensions
-!*.*
+# ignore all binary files
+*.o
+*.out
 
-# Unignore all dirs
-!*/
+#ignore all dependencies
+*.d
 
-# Unignore all Makefile's
-!*/Makefile
+#ignore all text files
+*.txt
