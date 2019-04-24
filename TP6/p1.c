@@ -4,13 +4,16 @@
 #include <pthread.h>
 
 #define STDERR 2
-#define NUMITER 10000
+#define NUMITER 1000
 
 void * thrfunc(void * arg) {
     int i;
     
     fprintf(stderr, "Starting thread %s\n", (char *) arg);
-    for (i = 1; i <= NUMITER; i++) write(STDERR,arg,1);
+    for (i = 1; i <= NUMITER; i++) { 
+        //write(STDERR,arg,1);
+        printf("%p - %d ", arg, i);
+    }
     return NULL;
 }
 
@@ -22,6 +25,7 @@ int main() {
     
     pthread_join(ta, NULL);
     pthread_join(tb, NULL);
-
+    
+    //pthread_exit(NULL);
     return 0;
 }
