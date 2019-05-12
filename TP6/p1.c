@@ -26,6 +26,18 @@ void * thrfunc_b(void * arg) {
 int main() {
     pthread_t ta, tb;
 
+    /*
+    When passing arguments maybe it is a good idea to
+    cast the referencing variable as a void pointer
+    only if we are not passing the same variable as
+    an argument to another thread
+
+    int i = 42;
+    pthread_create(&ta, NULL, thrfunc_a, (void *)&i);
+    // (void *)&i -> void pointer
+    // &i -> integer pointer
+    */
+
     // works
     int i = 1;
     pthread_create(&ta, NULL, thrfunc_a, &i);
